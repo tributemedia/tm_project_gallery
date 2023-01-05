@@ -1,0 +1,23 @@
+<?php
+
+use Drupal\views\ViewExecutable;
+
+/**
+* Implements hook_views_pre_render().
+*/
+function tm_project_gallery_views_pre_render(ViewExecutable $view) {
+  if (isset($view) && ($view->storage->id() == 'projects')) {
+    $view->element['#attached']['library'][] = 'tm_projects_gallery/project-gallery-views';
+  }
+}
+
+/**
+ * Implements hook_preprocess_node().
+*/
+
+function tm_project_gallery_preprocess_node(&$variables) {
+  $node = $variables['node'];
+  if ($node->getType() == 'project') {
+    $variables['#attached']['library'][] = 'tm_project_gallery/project-gallery-node';
+  }
+}

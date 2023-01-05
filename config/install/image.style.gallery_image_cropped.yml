@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: gallery_image_cropped
+label: 'Gallery Image Cropped'
+effects:
+  3672daaa-1f91-49cf-b8cb-9c7eddfbad54:
+    uuid: 3672daaa-1f91-49cf-b8cb-9c7eddfbad54
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 570
+      height: 570
+      anchor: center-center

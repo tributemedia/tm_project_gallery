@@ -1,0 +1,10 @@
+project-gallery-views:
+  css:
+    theme:
+      css/gallery_views.css: {}
+project-gallery-node:
+  css:
+    theme:
+      css/gallery_node.css: {}
+  js:
+    js/gallery.js: {}

@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+name: 'Project Categories'
+vid: project_categories
+description: 'List of terms used to categorize projects.'
+weight: 0

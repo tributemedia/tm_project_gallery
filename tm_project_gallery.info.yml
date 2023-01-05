@@ -1,0 +1,22 @@
+name: 'Project Gallery'
+description: 'Provides Project content type and related configuration. Use Projects to add new projects to your project gallery. Projects will be automatically added to your "Projects" page.'
+type: module
+core_version_requirement: '^8.9 || ^9'
+dependencies:
+  - eva
+  - field
+  - field_group
+  - file
+  - image_style_warmer
+  - image
+  - menu_ui
+  - node
+  - path
+  - pathauto
+  - simple_sitemap
+  - svg_image
+  - taxonomy
+  - text
+  - user
+  - views
+version: 1.0.0-beta1
