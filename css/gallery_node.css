@@ -2,75 +2,35 @@
 /* = Project Gallery Node Styles = */
 /* =============================== */
 
-.path-projects .views-element-container .views-row {
-  display: inline-block;
-  width:50%;
-  margin-left:-3px;
-  margin-bottom:0px;
+.node--type-project .images-wrapper {
+	margin-bottom:20px;
 }
 
-.gallery-item-wrapper {
-	position:relative;
+.main-image .views-row {
+	margin-bottom:0px !important;
+}
+
+.secondary-images .views-row {
+	display:inline-block;
+	margin-bottom:3px !important;
+	padding-bottom:0px !important;
+}
+
+.secondary-images .field-content.thumb-img {
 	overflow:hidden;
-	margin-right:20px;
 }
 
-.gallery-item-wrapper .gallery-item-title {
-    position: absolute;
-	z-index:1;
-	font-size: 1.25rem;
-    width:100%;
-    background: rgba(0,0,0,.8);
-    right: 0;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-	opacity:0;
-    -moz-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-}
-
-.gallery-item-wrapper:hover .gallery-item-title {
-	opacity:1;
-    -moz-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-}
-
-.gallery-item-wrapper:hover .gallery-item-title a {
-    display: block;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    padding-top: calc((100% - 1rem) / 2);
-}
-
-.gallery-item-wrapper .gallery-item-img img {
+.secondary-images .field-content.thumb-img img {
 	transform:scale(1);
-    -moz-transition: all 1s ease-in-out;
-    -o-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
-.gallery-item-wrapper:hover .gallery-item-img img {
+.secondary-images .field-content.thumb-img:hover img {
 	transform:scale(1.1);
-    -moz-transition: all 1s ease-in-out;
-    -o-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
-}
-
-@media (min-width:768px){
-	.path-projects .views-element-container .views-row {
-		width:33.333%;
-	}
-}
-
-@media (min-width:992px){
-	.path-projects .views-element-container .views-row {
-		width:25%;
-	}
+	cursor:pointer;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
 }
